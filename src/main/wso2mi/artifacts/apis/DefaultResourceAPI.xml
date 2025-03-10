@@ -1,0 +1,34 @@
+<api xmlns="http://ws.apache.org/ns/synapse" name="DefaultResourceAPI" context="/default">
+    <resource methods="GET" uri-template="/get">
+        <inSequence>
+            <log level="custom">
+                <property name="message" value="GET request received"/>
+            </log>
+            <respond/>
+        </inSequence>
+    </resource>
+    <resource methods="POST" uri-template="/post">
+        <inSequence>
+            <log level="custom">
+                <property name="message" value="POST request received"/>
+            </log>
+            <respond/>
+        </inSequence>
+    </resource>
+    <resource methods="PUT" uri-template="/put">
+        <inSequence>
+            <log level="custom">
+                <property name="message" value="PUT request received"/>
+            </log>
+            <respond/>
+        </inSequence>
+    </resource>
+    <resource methods="DELETE" uri-template="/delete">
+        <inSequence>
+            <log level="custom">
+                <property name="message" value="DELETE request received"/>
+            </log>
+            <respond/>
+        </inSequence>
+    </resource>
+</api>
